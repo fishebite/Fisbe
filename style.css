@@ -1,0 +1,265 @@
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* === BODY BACKGROUND === */
+body {
+    background:linear-gradient(135deg, #ffe29f, #ffb347);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* === HEADER === */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff9800;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header nav .logo {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+header nav a:hover {
+    color: #333;
+}
+header nav a.active {
+    text-decoration: underline;
+}
+
+/* === HERO SECTION === */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20 px;
+    background: linear-gradient(90deg, #ffb347, #ffe29f);
+    color: #fff;
+    border-radius: 12px;
+    margin: 20px;
+}
+.hero text {
+    max-width: 500px;
+}
+.hero-text h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.hero img {
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* === KEUNGGULAN === */
+.keunggulan {
+    text-align: center;
+    padding: 40px 20px;
+}
+.keunggulan h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.keunggulan-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.keunggulan .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.keunggulan .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.keunggulan img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* === PRODUK GRID === */
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.produk {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.produk img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.produk:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+.produk img {
+    transition: transform 0.3s ease;
+}
+.produk:hover img {
+    transform: scale(1.05);
+}
+.produk h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.produk p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.produk strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #ff9800;
+    font-size: 16px;
+}
+
+/* === TESTIMONI === */
+.testimoni {
+    background: #fff8e1;
+    padding: 40px 20px;
+    text-align: center;
+}
+.testimoni h2 {
+    margin-bottom: 20px;
+}
+.testimoni-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.testi {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 250px;
+    font-style: italic;
+}
+
+/* === CTA SECTION === */
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(90deg, #ff9800, #ffb347);
+    color: #fff;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+/* === BUTTON === */
+.btn {
+    display: inline-block;
+    background: #ff9800;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+/* === KONTAK === */
+.kontak {
+    padding: 40px 20px;
+    text-align: center;
+}
+.kontak form {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.kontak input, .kontak textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.kontak .sosmed a {
+    display: inline-block;
+    margin: 10px;
+    color: #ff9800;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ff9800;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* === RESPONSIVE ===*/
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero img{
+        margin-top: 20px;
+    }
+    .keunggulan-grid, .testimoni-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
